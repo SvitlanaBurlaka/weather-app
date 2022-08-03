@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(178 221 229 / 88%);
+    color: black;
+}
+
+
+.buttonsContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.container {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 5px auto;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+button {
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+#mapContainer {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
+.cityName,
+.temperature {
+    text-align: center;
+}
