@@ -32,7 +32,7 @@ function printWeather(data) {
   temp.innerHTML = ` ${roundTemperature} °`;
   // Icon for the weather type
   img.src = `
-     http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png
+     https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png
      `;
   document.querySelector(".mainContainer").appendChild(img);
   // Wind speed
