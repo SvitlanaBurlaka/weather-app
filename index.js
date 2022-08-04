@@ -57,12 +57,11 @@ function printWeather(data) {
     hour: "numeric",
     minute: "numeric",
   });
-  console.log(humanformatSunset);
 
   sunsetSunrise.innerHTML = ` Sunrise at : ${humanFormatSunrise} and sunset at : ${humanformatSunset}`;
 
   // My feature : i add visibility
-  visibility.innerHTML = `Visibility: ${data.visibility / 1000} kilometers`;
+  visibility.innerHTML = `Visibility: ${data.visibility / 1000} km`;
 }
 
 button.addEventListener("click", () => {
@@ -90,8 +89,6 @@ buttonCurrentPosition.addEventListener("click", function () {
   navigator.geolocation.getCurrentPosition(function (geolocationPosition) {
     const longitudeTwo = geolocationPosition.coords.longitude;
     const latitudeTwo = geolocationPosition.coords.latitude;
-    console.log(longitudeTwo);
-    console.log(latitudeTwo);
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?lat=${latitudeTwo}&lon=${longitudeTwo}&appid=141f299896d9c32c851d3c2c2311a11e&units=metric`
     )

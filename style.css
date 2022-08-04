@@ -21,14 +21,14 @@ body {
 }
 
 .container {
+    gap: 40px;
     margin-left: 10px;
     margin-right: 10px;
     font-weight: 700;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    gap: 60px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -45,6 +45,7 @@ img {
 }
 
 button {
+    padding: 10px;
     margin-left: 15px;
     cursor: pointer;
     font-size: 16px;
@@ -55,11 +56,19 @@ button {
 
 #mapContainer {
     height: 500px;
-    width: 500px;
+    max-width: 500px;
     margin: auto;
 }
 
 .cityName,
 .temperature {
     text-align: center;
+}
+
+@media screen and (max-width: 590px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+
+    }
 }
